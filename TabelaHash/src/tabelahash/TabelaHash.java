@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package tabelahash;
 
 import java.util.Scanner;
@@ -58,14 +63,13 @@ public class TabelaHash {
         }
     }
     
- static void mostrarhash(){
-     for(int i = 0; i < tam; i++){
-         if(tabela[i].livre == '0'){
-             System.out.println("Entrada "+i+": "+ tabela[i].chave+""+ tabela[i].livre);
-         }
-     }
- }
-    
+    public void mostrarHash() {
+        for (int i = 0; i< tam; i++){
+            if (tabela[i].livre == 'O'){
+                System.out.println("ENTRADA "+ i + ": " +tabela[i].chave + "" + tabela[i].livre);
+            }
+        }
+    }
     
     
     
